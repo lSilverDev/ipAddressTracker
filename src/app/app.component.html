@@ -1,26 +1,26 @@
 <div class="header">
     <p class="title">IP Address Tracker</p>
-    <input class="search" type="text" placeholder="Search for any IP address or domain">
+    <input (focus)="getDatas()" class="search" type="text" placeholder="Search for any IP address or domain">
 
     <div class="modal">
       <div class="ipAddress">
           <p class="modal_title">IP ADDRESS</p>
-          <p class="modal_info">111.111.111.111</p>
+          <p class="modal_info">{{ip}}</p>
       </div>
       <p class="modal_sp">l</p>
       <div class="location">
         <p class="modal_title">LOCATION</p>
-        <p class="modal_info">Brooklyn, NY 10001</p>
+        <p class="modal_info">{{location}}</p>
       </div>
       <p class="modal_sp">l</p>
       <div class="timezone">
         <p class="modal_title">TIMEZONE</p>
-        <p class="modal_info">UTC - 05:00</p>
+        <p class="modal_info">{{timezone}}</p>
       </div>
       <p class="modal_sp">l</p>
       <div class="ISP">
         <p class="modal_title">ISP</p>
-        <p class="modal_info">SpaceX Starlink</p>
+        <p class="modal_info">{{isp}}</p>
       </div>
     </div>
 </div>
