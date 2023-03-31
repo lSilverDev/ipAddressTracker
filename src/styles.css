@@ -8,14 +8,18 @@
   /* primarias */
   --very-dark-gray: hsl(0, 0%, 17%);
   --dark-gray: hsl(0, 0%, 59%);
-
+  --white: white;
 
   /* Body Copy */
   --font-size-body: 18px;
+  --font-size-title: 12px;
+  --font-size-info: 24px;
 
   /* Font */
   --font-family-hat: 'Rubik', sans-serif;
-  --font-weight: 400, 500, 700;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
 }
 
 *{

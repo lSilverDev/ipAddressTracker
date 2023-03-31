@@ -34,10 +34,23 @@
   height: 18vh;
   width: 70vw;
   border-radius: 20px;
-  border: 1px solid black;
+  border: 1px solid rgba(194, 194, 194, 0.575);
+  background-color: var(--white);
 }
 
+.title{
+  color: var(--white);
+}
 
+.modal_title{
+  color: var(--dark-gray);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-500);
+}
+
+.modal_info{
+  font-size: var(--font-size-info);
+}
 
 .map{
   height: 65vh;
