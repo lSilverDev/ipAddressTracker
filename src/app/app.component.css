@@ -1,0 +1,44 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  height: 25vh;
+  background-image: url("../assets/images/pattern-bg-desktop.png");
+  background-size: cover;
+}
+
+.title{
+  margin: 1em;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.search{
+  width: 30vw;
+  padding: 1em;
+  border: none;
+  border-radius: 1em;
+}
+
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  position: absolute;
+  margin: 9em;
+
+  height: 18vh;
+  width: 70vw;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+
+
+.map{
+  height: 65vh;
+}

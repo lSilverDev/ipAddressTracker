@@ -1,4 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  /* screen sizes */
+  --screen-mobile: 375px;
+  --screen-desktop: 1440px;
+
+  /* cores */
+
+  /* primarias */
+  --very-dark-gray: hsl(0, 0%, 17%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+
+  /* Body Copy */
+  --font-size-body: 18px;
+
+  /* Font */
+  --font-family-hat: 'Rubik', sans-serif;
+  --font-weight: 400, 500, 700;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: var(--font-family-hat);
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
