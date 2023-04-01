@@ -36,6 +36,7 @@
   border-radius: 20px;
   border: 1px solid rgba(194, 194, 194, 0.575);
   background-color: var(--white);
+  z-index: 10;
 }
 
 .title{
@@ -57,5 +58,11 @@
 }
 
 .map{
+  height: 75vh;
+}
+
+#map{
+  width: 100%;
+  position: fixed;
   height: 75vh;
 }
