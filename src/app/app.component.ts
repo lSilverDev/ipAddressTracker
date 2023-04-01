@@ -49,7 +49,6 @@ export class AppComponent implements AfterViewInit {
     this.location = `${this.data.country_capital}, ${this.data.country_code2}`;
     this.timezone = this.data.time_zone.offset;
     this.isp = this.data.isp;
-    console.log(this.data);
     this.lat = this.data.latitude;
     this.lng = this.data.longitude;
 
@@ -57,7 +56,6 @@ export class AppComponent implements AfterViewInit {
   }
 
   mapLocation(){
-    console.log(this.lat, this.lng);
     var markerIcon = L.icon({
       iconUrl: '../../assets/images/icon-location.svg',
 
