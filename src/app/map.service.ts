@@ -6,15 +6,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MapService {
-  private readonly API = 'https://geo.ipify.org/api/v2/country?apiKey=at_QRafkSXDGB5W9JemLmHKoiJtknyPv&ipAddress';
+  private readonly API = `https://api.ipgeolocation.io/ipgeo?apiKey=8b5280ea014040f38bed70cb39a8061e&ip`;
 
   constructor(private http: HttpClient) { }
 
-  getDatas():Observable<any> {
-    var ip: string = '8.8.8.8';
+  getDatas(ip: string):Observable<any> {
+    const url = `${this.API}=${ip}`;
 
-    const url = `${this.API}=${ip}`
-
-    return this.http.get<any>(url)
+    return this.http.get(url);
   }
 }

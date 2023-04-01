@@ -9,24 +9,27 @@ import { MapService } from './map.service';
 export class AppComponent {
   title = 'ipAddressTracker';
 
-  ip = 0;
-  location = '';
-  timezone = '';
-  isp = '';
+  data: any;
+  zoom = 3;
 
+  searchIp: string = '';
+  ip: string = '--';
+  location: string = '--';
+  timezone: string = '--';
+  isp: string = '--';
 
   constructor(private service: MapService){ }
 
   ngOnInit() : void {}
 
   getDatas(){
-    var data = this.service.getDatas();
+    this.service.getDatas(this.searchIp).subscribe((data) => {
+      this.data = data;
+    });
 
-
-    console.log(data);
-
-    this.genMap();
+    this.ip = this.data.ip;
+    this.location = `${this.data.country_capital}, ${this.data.country_code2}`;
+    this.timezone = this.data.time_zone.offset;
+    this.isp = this.data.isp;
   }
-
-  genMap() {}
 }
