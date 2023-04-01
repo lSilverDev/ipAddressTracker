@@ -1,13 +1,14 @@
 <div class="header">
     <p class="title">IP Address Tracker</p>
-    <input
-     class="search"
-     type="search"
-     placeholder="Search for any IP address or domain"
-     autofocus
-     [(ngModel)]="searchIp"
-     >
-    <button (click)="getDatas()">Search</button>
+      <input
+      class="search"
+      type="search"
+      placeholder="Search for any IP address or domain"
+      autofocus
+      [(ngModel)]="searchIp"
+      (keyup)="getDatas()"
+      >
+
 
     <div class="modal">
       <div class="ipAddress">
