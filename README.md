@@ -10,6 +10,6 @@ ipgeolocation API was used to get the information and IP location data.
 
 'ng serve'
 
-## for a quick test
+## for a quick test:
 
 Use the IP: 8.8.8.8
