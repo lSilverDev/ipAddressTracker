@@ -46,7 +46,7 @@ export class AppComponent implements AfterViewInit {
     });
 
     this.ip = this.data.ip;
-    this.location = `${this.data.country_capital}, ${this.data.country_code2}`;
+    this.location = `${this.data.city}, ${this.data.country_code2}`;
     this.timezone = this.data.time_zone.offset;
     this.isp = this.data.isp;
     this.lat = this.data.latitude;
